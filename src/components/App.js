@@ -1,19 +1,15 @@
-import React, { Component } from 'react'
-import ToDoList from './ToDoList'
-import NavBar from './NavBar'
-import AddTask from './AddTask'
-import { BrowserRouter , Switch, Route} from 'react-router-dom'
-import initialData from '../initialData'
-import uniqid from 'uniqid'
-import Fetching from './Fetching'
-import Devtools from 'mobx-react-devtools';
+import React, { Component } from 'react';
+import ToDoList from './ToDoList';
+import NavBar from './NavBar';
+import AddTask from './AddTask';
+import { BrowserRouter , Switch, Route} from 'react-router-dom';
+import DevTools from 'mobx-react-devtools';
 
 class App  extends Component {
-
   render(){
     return(
       <section id="toDo">
-        <Devtools />
+        <DevTools />
         <BrowserRouter>
           <>
             <Switch>

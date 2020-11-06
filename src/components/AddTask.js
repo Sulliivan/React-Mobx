@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {observable, action} from 'mobx';
-import {observer, inject} from 'mobx-react';
-
+import { observable, action } from 'mobx';
+import { observer, inject } from 'mobx-react';
 
 @inject('store')
 @observer
@@ -11,16 +10,15 @@ class AddTask extends Component {
     @action
     handleSubmit = (e) => {
         e.preventDefault()
-        this.props.store.addTask(this.newTaskTitle)
+        this.props.store.addTask(this.newTaskTitle);
         this.newTaskTitle = '';
         this.props.history.push('/')
-    }
+    };
 
     @action
     handleInputChange = (e) => {
         this.newTaskTitle = e.target.value;
-    }
-
+    };
 
     render(){
         return(
@@ -39,6 +37,5 @@ class AddTask extends Component {
         )//end return in render
     }//end render
 }
-
 
 export default AddTask;

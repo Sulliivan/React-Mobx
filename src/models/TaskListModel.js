@@ -1,7 +1,8 @@
 import { observable, computed, action } from 'mobx';
-import TaskModel from './TaskModel'
+import TaskModel from './TaskModel';
 
 export default class TaskListModel {
+
     @observable tasks = [];
 
     @computed
