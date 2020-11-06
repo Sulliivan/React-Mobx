@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import ToDoList from './ToDoList';
-import NavBar from './NavBar';
-import AddTask from './AddTask';
-import { BrowserRouter , Switch, Route} from 'react-router-dom';
+import React, { Component } from 'react'
+import ToDoList from './ToDoList'
+import NavBar from './NavBar'
+import AddTask from './AddTask'
+import { BrowserRouter , Switch, Route} from 'react-router-dom'
 import DevTools from 'mobx-react-devtools';
 
 class App  extends Component {
